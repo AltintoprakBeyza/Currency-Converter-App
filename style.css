@@ -1,0 +1,109 @@
+/* Tüm öğelere box-sizing: border-box uygular */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body stili */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background-color: #675AFE;
+    /* Arka plan rengini ayarladık */
+    color: #333;
+    /* Metin rengi */
+    padding: 20px;
+}
+
+/* Container kutusu */
+#container {
+    background-color: #ffffff;
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge ekledik */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Başlık kısmı */
+.header-wrapper {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Başlık ve içeriğin arasına boşluk ekledik */
+}
+
+/* İçerik kısmındaki öğeler */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* Öğeleri dikey olarak sıralar */
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Input ve select öğeleri */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Ok işaretinin görünümü */
+i {
+    font-size: 24px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Sonuç input kutusu */
+#result {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Copyright metni */
+span {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Hover efekti için butonlar */
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    /* Buton arka plan rengi */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Fare ile üzerine gelince el simgesi */
+    transition: background-color 0.3s;
+    /* Hover efekti */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Hover rengi */
+}
