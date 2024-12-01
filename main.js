@@ -4,8 +4,6 @@ const secondOption = document.querySelector("#secondCurrencyOption");
 const resultInput = document.querySelector("#result");
 
 const currency = new Currency();
-//inputa bir değer girildiğinde bir şey olsun dersek inputların input adında
-// bir eventi var.
 
 runEventListeners();
 
